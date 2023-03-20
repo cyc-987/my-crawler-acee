@@ -5,8 +5,14 @@
 
 import scrapy
 
-
+'''
 class SpiderItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+'''
+
+class biliitem(scrapy.Item):
+    plays = scrapy.Field()
+    name = scrapy.Field()
+    href = scrapy.Field()
