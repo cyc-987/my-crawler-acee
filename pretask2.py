@@ -5,11 +5,11 @@
 
 import re
 
-str = input('input:')
-rule = re.compile(r'-?\d+')
-str_processed = rule.findall(str)
-#print(str_processed)
+str = input('input:')#获得字符串输入
+rule = re.compile(r'-?\d+')#构造正则表达式
+str_processed = rule.findall(str)#findall方法，返回列表
 
+#str转int列表
 list_output = []
 for i in str_processed:
     list_output.append(int(i))
