@@ -13,7 +13,14 @@ class SpiderItem(scrapy.Item):
 '''
 
 class biliitem(scrapy.Item):
-    plays = scrapy.Field()
-    name = scrapy.Field()
-    href = scrapy.Field()
+    bvid = scrapy.Field()
+    title = scrapy.Field()
+    description = scrapy.Field()
+    play = scrapy.Field()
+    like = scrapy.Field()
+    favorites = scrapy.Field()
+    tag = scrapy.Field()
+    duration = scrapy.Field()
+    
+    
     pass

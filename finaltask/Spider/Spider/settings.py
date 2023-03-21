@@ -94,5 +94,6 @@ FEED_EXPORT_ENCODING = "utf-8"
 
 DEFAULT_REQUEST_HEADERS = {
   'Accept-Language': 'en',
-  'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15'
+  'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15',
+  'Cookie':'sid=h736xd04; CURRENT_FNVAL=4048; b_nut=1679410216; buvid3=AE749284-2340-82AC-5DBF-5FBA327DDC9816277infoc; buvid4=D712FC9F-6480-AEFA-5D5C-2A14D249D44B16277-023032122-yW9JSiNaa2qy6iFsxeTV3A%3D%3D; _uuid=10D46482D-DEDD-E54E-3488-537929C2BD9D15119infoc; b_lsid=1A1533E8_18704A638C9; buvid_fp=86dd4f964017c6ac8f7046ba10e52762; nostalgia_conf=-1'
 }
