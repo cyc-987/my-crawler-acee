@@ -16,3 +16,4 @@ class biliitem(scrapy.Item):
     plays = scrapy.Field()
     name = scrapy.Field()
     href = scrapy.Field()
+    
