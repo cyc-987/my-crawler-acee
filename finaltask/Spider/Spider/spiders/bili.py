@@ -12,20 +12,24 @@ class BiliSpider(scrapy.Spider):
         filename = 'results.html'
         open(filename,'w').write(html)
         
-        
+        test = response.xpath('//*[@id="i_cecream"]/div/div[2]/div[2]/div/div/div/div[1]/div/div')
+        open('testtemp.html','w').write(str(test))
+                
         items = []
         i = 1
-        for each in response.xpath('//*[@id="i_cecream"]/div/div[2]/div[2]/div/div/div/div[1]/div'):
+        for each in response.xpath('//*[@id="i_cecream"]/div/div[2]/div[2]/div/div/div/div[1]/div/div'):
+            #open('testtemp.html','w').write(str(each))
             item = biliitem()
-            temp_str = 'div[' + str(i) + ']/div/div[2]/'
             i = i + 1
-            plays = each.xpath(temp_str+'a/div/div[2]/div/div/span[1]/span/text()').extract()
-            name = each.xpath(temp_str+'div/div/a/h3/@title').extract()
-            href = each.xpath(temp_str+'div/div/a/@href').extract()
+            plays = each.xpath('div/div[2]/a/div/div[2]/div/div/span[1]/span/text()').extract()
+            name = each.xpath('div/div[2]/div/div/a/h3/@title').extract()
+            href = each.xpath('div/div[2]/div/div/a/@href').extract()
             
             item['plays'] = plays[0]
             item['name'] = name[0]
             item['href'] = href[0]
             
             items.append(item)
+            pass
         return items
+
