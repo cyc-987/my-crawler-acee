@@ -31,7 +31,7 @@ ROBOTSTXT_OBEY = False
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -95,5 +95,5 @@ FEED_EXPORT_ENCODING = "utf-8"
 DEFAULT_REQUEST_HEADERS = {
   'Accept-Language': 'en',
   'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15',
-  'Cookie':'sid=h736xd04; CURRENT_FNVAL=4048; b_nut=1679410216; buvid3=AE749284-2340-82AC-5DBF-5FBA327DDC9816277infoc; buvid4=D712FC9F-6480-AEFA-5D5C-2A14D249D44B16277-023032122-yW9JSiNaa2qy6iFsxeTV3A%3D%3D; _uuid=10D46482D-DEDD-E54E-3488-537929C2BD9D15119infoc; b_lsid=1A1533E8_18704A638C9; buvid_fp=86dd4f964017c6ac8f7046ba10e52762; nostalgia_conf=-1'
+  'Cookie':"header_theme_version=CLOSE; home_feed_column=4; i-wanna-go-back=-1; innersign=0; CURRENT_FNVAL=4048; b_lsid=A9E5D2E5_187073C905C; bp_video_offset_364122146=775387364054794400; PVID=1; sid=7cyzvkn9; buvid4=68A1E4B4-7786-62B9-2AD7-07FD9DE3FFBF53918-022100122-yW9JSiNaa2owPj%2BD5wQFkw%3D%3D; buvid_fp=3a4cf84c849fdc6ca5055490e0f0af2a; buvid_fp_plain=undefined; fingerprint=3a4cf84c849fdc6ca5055490e0f0af2a; CURRENT_QUALITY=120; b_ut=5; DedeUserID=364122146; DedeUserID__ckMd5=19efbfb21c93a9dd; SESSDATA=af997a8d%2C1686138401%2C9a299%2Ac2; bili_jct=1ef95cc58507393c8cdbb878c4bdbbbe; rpdid=|(YYl~RmJJY0J'uYY)lmYmY); _uuid=D31955BA-3646-EFB2-5BE6-D23E5FC4435379032infoc; b_nut=100; LIVE_BUVID=AUTO4516556261469536; nostalgia_conf=-1; buvid3=A4C1A134-970E-617A-5015-011389B8D0B591887infoc"
 }

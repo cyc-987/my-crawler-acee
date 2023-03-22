@@ -15,7 +15,7 @@ class SpiderItem(scrapy.Item):
 class biliitem(scrapy.Item):
     bvid = scrapy.Field()
     title = scrapy.Field()
-    description = scrapy.Field()
+    author = scrapy.Field()
     play = scrapy.Field()
     like = scrapy.Field()
     favorites = scrapy.Field()
