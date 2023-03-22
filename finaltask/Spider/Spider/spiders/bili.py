@@ -29,6 +29,8 @@ class BiliSpider(scrapy.Spider):
             
             bvid = result['bvid']
             title = result['title']
+            title = re.sub(r'<em class="keyword">','',title)
+            title = re.sub(r'</em>','',title)
             author = result['author']
             play = result['play']
             like = result['like']
@@ -36,12 +38,13 @@ class BiliSpider(scrapy.Spider):
             tag = result['tag']
             duration = result['duration']
             
-            item['bvid'] = bvid
-            item['title'] = title
-            item['author'] = author
-            item['play'] = play
-            item['like'] = like
-            item['duration'] = duration
-            item['favorites'] = favorites
-            item['tag'] = tag
-            yield item        
+            if(float(play)>1000000):
+                item['bvid'] = bvid
+                item['title'] = title
+                item['author'] = author
+                item['play'] = play
+                item['like'] = like
+                item['duration'] = duration
+                item['favorites'] = favorites
+                item['tag'] = tag
+                yield item        
